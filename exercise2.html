@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            width: 100%;
+        }
+        .row div {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .logo, .navigation {
+            background-color: red;
+            color: white;
+        }
+        .header {
+            background-color: lightblue;
+        }
+        .article {
+            background-color: lightgreen;
+        }
+        .figure1 {
+            background-color: magenta;
+        }
+        .figure2 {
+            background-color: yellow;
+        }
+        .figure3 {
+            background-color: lightcoral;
+        }
+        .footer {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="logo">Logo</div>
+            <div class="navigation">Navigation</div>
+        </div>
+        <div class="row">
+            <div class="header">Header</div>
+        </div>
+        <div class="row">
+            <div class="article">Article</div>
+        </div>
+        <div class="row">
+            <div class="figure1">Figure 1</div>
+            <div class="figure2">Figure 2</div>
+            <div class="figure3">Figure 3</div>
+        </div>
+        <div class="row">
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+</body>
+</html>
+
